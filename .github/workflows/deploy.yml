@@ -39,7 +39,7 @@ jobs:
           username: ${{ secrets.EC2_USERNAME }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
-            cd /home/ubuntu/3-tier
+            cd /c/3-tier
             echo "Stopping existing containers..."
             docker-compose down || true
             echo "Pulling latest images..."
